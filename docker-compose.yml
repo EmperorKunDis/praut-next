@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: praut_db
+      POSTGRES_USER: praut
+      POSTGRES_PASSWORD: prautpass
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:
+    driver: localc
