@@ -1,0 +1,93 @@
+ .next
+app
+  api
+    analytics
+      company
+      personal
+      team
+    auth
+      [...nextauth]
+        route.ts
+    callback
+      google
+    invite
+    register
+    session
+    signin
+    signout
+  chat
+    agents
+  projects
+    [id]
+      history
+      members
+      access
+  upload
+  users
+    [id]
+  whiteboard
+    [id]
+  auth
+    invite
+    login
+      page.tsx
+    register
+components
+  analytics
+    AnalyticsCard.tsx
+    AnalyticsChart.tsx
+    TeamAnalytics.tsx
+  auth
+    LoginForm.tsx
+    RegisterForm.tsx
+  dashboard
+  chat
+    AgentConfig.tsx
+    ChatWindow.tsx
+    MessageList.tsx
+  projects
+  settings
+  ui
+  whiteboard
+    AnimatedLogo.js
+    PrautWireframe.js
+dashboard
+  analytics
+  chat
+  projects
+  settings
+  whiteboard
+  layout.tsx
+lib
+  api
+  auth
+  utils
+types
+  analytics.ts
+  auth.ts
+  chat.ts
+  project.ts
+  user.ts
+public
+.env
+.gitignore
+docker-compose.yml
+eslint.config.mjs
+middleware.ts
+next-env.d.ts
+next.config.ts
+package-lock.json
+package.json
+postcss.config.js
+postcss.config.mjs
+README.md
+tailwind.config.js
+tailwind.config.mjs
+tsconfig.json
+globals.css
+layout.tsx
+page.tsx
+middleware
+prisma
+  schema.prisma
+node_modules
